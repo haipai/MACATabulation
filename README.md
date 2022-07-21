@@ -8,7 +8,10 @@ Using Matlab GPU computation power to fast tabulate future weather variables int
 2. County shapefile map 
 3. Overlay County map with MACA map to get overlapping areas
 4. Using GPU parallel computating power to speed up the calculation 
-    $$W_i = \sum^{J}_{j=1} \frac{}{\sum A_{ij}} $$
+
+    $$w_i = \sum^J_{j=1}\frac{a_{ij}*w_j}{\sum a_{ij}}$$
+    
+    where $w_i$ is the tabulated weather variable for county $i$, $J$ MACA cells have overlapping areas with county $i$, $a_{ij}$ is the overlapping area between MACA cell $j$ and county $i$.
 # Files in this project
 sampleDailyMaximumTemperature.m: Matlab script to tabulate daily maxium temperature from macav2livneh_tasmax_bcc-csm1-1_r1i1p1_rcp85_2026_2045_CONUS_daily.nc
 
