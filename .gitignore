@@ -37,3 +37,20 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# common data files
+.csv
+.xlsx 
+.xls
+.xlsm 
+.xlm 
+.doc
+.docx
+.ppt 
+
+# MATLAB
+.mat
+
+# STATA 
+.dta 
+
