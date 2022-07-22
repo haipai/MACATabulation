@@ -13,9 +13,11 @@ Using Matlab GPU computation power to fast tabulate future weather variables int
     
     where $w_i$ is the tabulated weather variable for county $i$, $J$ MACA cells have overlapping areas with county $i$, $a_{ij}$ is the overlapping area between MACA cell $j$ and county $i$.
 # Files in this project
-sampleDailyMaximumTemperature.m: Matlab script to tabulate daily maxium temperature from macav2livneh_tasmax_bcc-csm1-1_r1i1p1_rcp85_2026_2045_CONUS_daily.nc
+fipsmaca2011.csv: County2MACA matching csv file with 2011 NLCD layer (value 82) as mask 
 
-sampleData.zip: County2MACA matching csv file and MACA shapefile
+macaextract.m: MATLAB script to tabulate daily maxium temperature from macav2livneh_tasmax_bcc-csm1-1_r1i1p1_rcp85_2026_2045_CONUS_daily.nc to counties 
+
+macamap/macamap.shp: polygon shape file for maca raster cells (~6km by 6km) 
 
 # Note
 1. Since the MACA file is usually in the size of several GBs, I would not share it directly. Instead, please download MACA files directly from the Climatology Lab (https://www.climatologylab.org/maca.html)
