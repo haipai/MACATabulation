@@ -50,7 +50,11 @@ vignettes/*.pdf
 
 # MATLAB
 .mat
+.asv 
 
 # STATA 
 .dta 
+
+#other data format
+.nc
 
